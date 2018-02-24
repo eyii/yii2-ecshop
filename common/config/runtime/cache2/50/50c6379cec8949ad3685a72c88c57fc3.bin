@@ -1,0 +1,42 @@
+a:2:{i:0;a:2:{i:0;s:5304:"<!--搜索栏-->
+<div id="searchw0">
+<div id="search" class="clearfix">
+
+    <!--表单-->
+    <form id="searchForm" name="searchForm" method="get" action="/index.php?r=sousuo%2Findex" onsubmit="return checkSearchForm()" class="f_r" style="_position:relative; top:5px;">
+        <select name="category" id="category" class="B_input">
+            <option value="0">所有分类</option>
+            <option value="1" >手机类型</option>
+            <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;3G手机</option>
+            <option value="5">&nbsp;&nbsp;&nbsp;&nbsp;双模手机</option>
+            <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;CDMA手机</option>
+            <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;GSM手机</option>
+            <option value="12">充值卡</option>
+            <option value="14">&nbsp;&nbsp;&nbsp;&nbsp;移动手机充值卡</option>
+            <option value="15">&nbsp;&nbsp;&nbsp;&nbsp;联通手机充值卡</option>
+            <option value="13">&nbsp;&nbsp;&nbsp;&nbsp;小灵通/固话充值卡</option>
+            <option value="6">手机配件</option>
+            <option value="11">&nbsp;&nbsp;&nbsp;&nbsp;读卡器和内存卡</option>
+            <option value="7">&nbsp;&nbsp;&nbsp;&nbsp;充电器</option>
+            <option value="8">&nbsp;&nbsp;&nbsp;&nbsp;耳机</option>
+            <option value="9">&nbsp;&nbsp;&nbsp;&nbsp;电池</option>
+        </select>
+        <input name="keywords" type="text" id="keyword" value="" class="B_input" style="width:110px;">
+        <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;">
+        <a href="/index.php?r=sousuo%2Findex">高级搜索</a>
+    </form>
+    <!--表单-->
+</div>
+</div>
+<!--搜索栏-->
+<script>
+    new Vue({
+        el:'#searchw0',
+        data:{
+            trees:[{"cat_id":"1","cat_name":"\u624b\u673a\u7c7b\u578b","keywords":"","cat_desc":"","parent_id":"0","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"5","filter_attr":"172,185,178","nodes":[{"cat_id":"2","cat_name":"CDMA\u624b\u673a","keywords":"","cat_desc":"","parent_id":"1","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"0","filter_attr":"6"},{"cat_id":"3","cat_name":"GSM\u624b\u673a","keywords":"","cat_desc":"","parent_id":"1","sort_order":"50","template_file":"","measure_unit":"\u53f0","show_in_nav":"1","style":"","is_show":"1","grade":"4","filter_attr":"185,189,173,178"},{"cat_id":"4","cat_name":"3G\u624b\u673a","keywords":"","cat_desc":"","parent_id":"1","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"1","style":"","is_show":"1","grade":"0","filter_attr":"28"},{"cat_id":"5","cat_name":"\u53cc\u6a21\u624b\u673a","keywords":"","cat_desc":"","parent_id":"1","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"5","filter_attr":"18"}]},{"cat_id":"6","cat_name":"\u624b\u673a\u914d\u4ef6","keywords":"","cat_desc":"","parent_id":"0","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"1","style":"","is_show":"1","grade":"0","filter_attr":"0","nodes":[{"cat_id":"7","cat_name":"\u5145\u7535\u5668","keywords":"","cat_desc":"","parent_id":"6","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"0","filter_attr":"0"},{"cat_id":"8","cat_name":"\u8033\u673a","keywords":"","cat_desc":"","parent_id":"6","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"0","filter_attr":"0"},{"cat_id":"9","cat_name":"\u7535\u6c60","keywords":"","cat_desc":"","parent_id":"6","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"0","filter_attr":"0"},{"cat_id":"11","cat_name":"\u8bfb\u5361\u5668\u548c\u5185\u5b58\u5361","keywords":"","cat_desc":"","parent_id":"6","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"0","filter_attr":"0"}]},{"cat_id":"12","cat_name":"\u5145\u503c\u5361","keywords":"","cat_desc":"","parent_id":"0","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"0","filter_attr":"0","nodes":[{"cat_id":"13","cat_name":"\u5c0f\u7075\u901a\/\u56fa\u8bdd\u5145\u503c\u5361","keywords":"","cat_desc":"","parent_id":"12","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"0","filter_attr":"0"},{"cat_id":"14","cat_name":"\u79fb\u52a8\u624b\u673a\u5145\u503c\u5361","keywords":"","cat_desc":"","parent_id":"12","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"0","filter_attr":"0"},{"cat_id":"15","cat_name":"\u8054\u901a\u624b\u673a\u5145\u503c\u5361","keywords":"","cat_desc":"","parent_id":"12","sort_order":"50","template_file":"","measure_unit":"","show_in_nav":"0","style":"","is_show":"1","grade":"0","filter_attr":"0"}]}]        }
+    })
+</script>
+
+
+<!--<option  v-for="item in trees" :value="item.cat_id">{{item.cat_name}}</option>
+<option value="4" v-for=" node in item.nodes">&nbsp;&nbsp;&nbsp;&nbsp;{{node.cat_name}}</option>-->";i:1;N;}i:1;N;}

@@ -1,0 +1,77 @@
+a:2:{i:0;a:2:{i:0;s:10363:"<div id="gouwuchew0" xmlns:v-on="http://www.w3.org/1999/xhtml">
+    <table width="99%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+        <tbody>
+        <tr>
+            <th bgcolor="#ffffff">商品名称</th>
+            <th bgcolor="#ffffff">属性</th>
+            <th bgcolor="#ffffff">市场价</th>
+            <th bgcolor="#ffffff">本店价</th>
+            <th bgcolor="#ffffff">购买数量</th>
+            <th bgcolor="#ffffff">小计</th>
+            <th bgcolor="#ffffff">操作</th>
+        </tr>
+        <tr v-for="item in items">
+            <td bgcolor="#ffffff" align="center">
+                <a href="http://ec.com/goods.php?id=8" target="_blank"><img :src="'all/images/home/'+item.goodsModel.goods_thumb"  border="0" title="飞利浦9@9v"></a><br>
+                <a href="http://ec.com/goods.php?id=8" target="_blank" class="f6">{{item.goods_name}}</a>
+            </td>
+            <td bgcolor="#ffffff">{{item.goods_attr}} <br>
+            </td>
+            <td align="right" bgcolor="#ffffff">￥{{item.market_price}} 元</td>
+            <td align="right" bgcolor="#ffffff">￥{{item.shop_price}}元</td>
+            <td align="right" bgcolor="#ffffff">
+                <input type="text" name="goods_number[43]" id="goods_number_43" value="1" size="4" class="inputBg" style="text-align:center " onkeydown="showdiv(this)">
+            </td>
+            <td align="right" bgcolor="#ffffff">￥{{item.goods_price*item.goods_number}}元</td>
+            <td align="center" bgcolor="#ffffff">
+                <a href="javascript:if (confirm(&#39;您确实要把该商品移出购物车吗？&#39;)) location.href=&#39;flow.php?step=drop_goods&amp;id=43&#39;; " class="f6">删除</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="99%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+        <tbody>
+        <tr>
+            <td bgcolor="#ffffff">购物金额小计 ￥{{totalMoney}}元，比市场价 ￥478.79元 节省了 ￥79.79元 (17%)c</td>
+            <td align="right" bgcolor="#ffffff">
+                <input type="button" value="清空购物车" class="bnt_blue_1" @click="qingkong_gouwuche">
+                <input name="submit" type="submit" class="bnt_blue_1" value="更新购物车">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    Vue.use(YIIEC);
+    new Vue({
+        el:'#gouwuchew0',
+        data:{
+            items:[{"goods_attr":"-1","goods_name":"小灵通\/固话50元充值卡","market_price":"57.59","shop_price":"48.00","goods_number":"2","goods_id":"25","goodsModel":{"goods_id":"25","cat_id":"13","goods_sn":"ECS000025","goods_name":"小灵通\/固话50元充值卡","goods_name_style":"+","click_count":"0","brand_id":"0","provider_name":"","goods_number":"2","goods_weight":"0.000","market_price":"57.59","shop_price":"48.00","promote_price":"0.00","promote_start_date":"0","promote_end_date":"0","warn_number":"1","keywords":"","goods_brief":"","goods_desc":"","goods_thumb":"images\/200905\/thumb_img\/25_thumb_G_1241972709885.jpg","goods_img":"images\/200905\/goods_img\/25_G_1241972709544.jpg","original_img":"images\/200905\/source_img\/25_G_1241972709750.jpg","is_real":"0","extension_code":"virtual_card","is_on_sale":"1","is_alone_sale":"1","is_shipping":"0","integral":"0","add_time":"1241972709","sort_order":"100","is_delete":"0","is_best":"1","is_new":"0","is_hot":"1","is_promote":"0","bonus_type_id":"0","last_update":"1245047546","goods_type":"0","seller_note":"","give_integral":"-1","rank_integral":"-1","suppliers_id":null,"is_check":null}},{"goods_attr":"颜色:黑色||","goods_name":"飞利浦9@9v","market_price":"478.79","shop_price":"399.00","goods_number":"1","goods_id":"8","goodsModel":{"goods_id":"8","cat_id":"3","goods_sn":"ECS000008","goods_name":"飞利浦9@9v","goods_name_style":"+","click_count":"76","brand_id":"4","provider_name":"","goods_number":"1","goods_weight":"0.075","market_price":"478.79","shop_price":"399.00","promote_price":"385.00","promote_start_date":"1241366400","promote_end_date":"1417276800","warn_number":"1","keywords":"双模 2008年春 黑色 直板 中低档","goods_brief":"","goods_desc":"<p align=\"left\">作为一款性价比极高的入门级<font size=\"3\" color=\"#ff0000\"><strong>商务手机<\/strong><\/font>，飞利浦<a href=\"mailto:9@9v\">Xenium&nbsp; 9@9v<\/a>三围大小为105&times;44&times;15.8mm，机身重量仅为<strong><font size=\"3\" color=\"#ff0000\">75g<\/font><\/strong>，装配了一块低规格1.75英寸128&times;160像素65000色CSTN显示屏。身正面采用月银色功能键区与屏幕数字键区相分隔，键盘设计较为<font size=\"3\"><strong><font color=\"#ff0000\">别<\/font><font color=\"#ff0000\">致<\/font><\/strong><\/font>，中部导航键区采用钛金色的&ldquo;腰带&rdquo;彰显出浓郁的商务气息。<\/p>\r\n<p align=\"left\">&nbsp;<\/p>\r\n<p align=\"left\">此款手机采用<strong><font size=\"3\" color=\"#ff0000\">触摸屏<\/font><\/strong>设计，搭配精致的手写笔，可支持手写中文和英文两个版本。增强的内置系统还能识别潦草字迹，确保在移动中和匆忙时输入文字的识别率。手写指令功能还支持特定图案的瞬间调用，独特的手写记事本功能，可以在触摸屏上随意绘制个性化的图案并进行<strong><font size=\"3\" color=\"#ff0000\">记事提醒<\/font><\/strong>，让商务应用更加随意。<\/p>\r\n<p align=\"left\">&nbsp;<\/p>\r\n<p align=\"left\">&nbsp;作为入门级为数不多支持<strong><font size=\"3\" color=\"#ff0000\">双卡功能<\/font><\/strong>的手机，可以同时插入两张SIM卡，通过菜单随意切换，只需开启漫游自动切换模式，<a href=\"mailto:9@9V\">9@9V<\/a>在该模式下能够判断网络情况，自动切换适合的手机号。<\/p>\r\n<p align=\"left\">&nbsp;<\/p>\r\n<p align=\"left\">&nbsp;<\/p>","goods_thumb":"images\/200905\/thumb_img\/8_thumb_G_1241425513488.jpg","goods_img":"images\/200905\/goods_img\/8_G_1241425513055.jpg","original_img":"images\/200905\/source_img\/8_G_1241425513518.jpg","is_real":"1","extension_code":"","is_on_sale":"1","is_alone_sale":"1","is_shipping":"0","integral":"3","add_time":"1241425512","sort_order":"100","is_delete":"0","is_best":"1","is_new":"1","is_hot":"1","is_promote":"1","bonus_type_id":"0","last_update":"1269589533","goods_type":"9","seller_note":"","give_integral":"-1","rank_integral":"-1","suppliers_id":null,"is_check":null}},{"goods_attr":"颜色:黑色||","goods_name":"诺基亚N96","market_price":"4440.00","shop_price":"3700.00","goods_number":"8","goods_id":"23","goodsModel":{"goods_id":"23","cat_id":"5","goods_sn":"ECS000023","goods_name":"诺基亚N96","goods_name_style":"+","click_count":"81","brand_id":"1","provider_name":"","goods_number":"8","goods_weight":"0.000","market_price":"4440.00","shop_price":"3700.00","promote_price":"0.00","promote_start_date":"0","promote_end_date":"0","warn_number":"1","keywords":"500万摄像头 microSD 工程塑料 蓝牙 数码相机 内置游戏 滑盖 高档 2008年09月 320×240 像素 黑色","goods_brief":"","goods_desc":"<p>诺基亚N96采用了<strong><font size=\"3\" color=\"#ff0000\">双向滑盖<\/font><\/strong>设计，机身整体呈灰黑色，沉稳、大气，机身材质采用了高强度的塑料材质，手机背面采用了抛光面板的设计风格。N96三维体积103*55*20mm，重量为125g。屏幕方面，诺基亚N96配备一块<strong><font size=\"3\" color=\"#ff0000\">2.8英寸<\/font><\/strong>的屏幕，支持<strong><font size=\"3\" color=\"#ff0000\">1670万色<\/font><\/strong>显示，分辨率达到QVGA（320&times;240）水准。<\/p>\r\n<p><img alt=\"\" src=\"file:\/\/\/C:\/DOCUME~1\/user\/LOCALS~1\/Temp\/moz-screenshot.jpg\" \/><\/p>\r\n<p>&nbsp;<\/p>\r\n<p>&nbsp;<img src=\"http:\/\/img2.zol.com.cn\/product\/21\/896\/ceN6LBMCid3X6.jpg\" alt=\"\" \/><\/p>\r\n<p>诺基亚N96设置有专门的<strong><font size=\"3\" color=\"#ff0000\">音乐播放键<\/font><\/strong>和标准的3.5毫米音频插口，支持多格式音乐播放。内置了<strong><font size=\"3\" color=\"#ff0000\">多媒体播放器<\/font><\/strong>，支持FM调频收音机等娱乐功能。N96手机支持<strong><font size=\"3\" color=\"#ff0000\">N-Gage游戏平台<\/font><\/strong>，内置包括<font size=\"3\" color=\"#ff0000\"><strong>《PinBall》完整版<\/strong><\/font>在内的四款N-Gage游戏，除了手机本身内置的游戏，还可以从N-Gage的网站下载或者购买最新的游戏，而且可以在论坛里和其他玩家一起讨论。<\/p>\r\n<p><img src=\"http:\/\/img2.zol.com.cn\/product\/21\/898\/cekkw57qJjSI.jpg\" alt=\"\" \/><\/p>\r\n<p>&nbsp;<\/p>","goods_thumb":"images\/200905\/thumb_img\/23_thumb_G_1241971556399.jpg","goods_img":"images\/200905\/goods_img\/23_G_1241971556855.jpg","original_img":"images\/200905\/source_img\/23_G_1241971556256.jpg","is_real":"1","extension_code":"","is_on_sale":"1","is_alone_sale":"1","is_shipping":"0","integral":"37","add_time":"1241971488","sort_order":"100","is_delete":"0","is_best":"1","is_new":"1","is_hot":"0","is_promote":"0","bonus_type_id":"0","last_update":"1269589078","goods_type":"9","seller_note":"","give_integral":"-1","rank_integral":"-1","suppliers_id":null,"is_check":null}}],
+
+        },
+        computed: {
+            totalMoney: function() {
+                let items=this.items;
+                let price=0;
+                items.forEach(function(e){
+                   price=parseFloat(price)+parseFloat(e.goods_price);
+                });
+                return price;
+            }
+        },
+        methods:{
+           qingkong_gouwuche(){
+               let url='/index.php?r=gouwuche%2Fqingkong-gouwuche';
+               let successCallback = function (data) {
+                   if (data.data.code == 1) {
+                       this.$tanchuang('清空购物车成功');
+                   }
+               };
+               const errorCallback = function (data) {
+                   console.log(data);
+               };
+               this.$http.get(url,null,{dataType:'json'}).then(successCallback, errorCallback);
+           }
+        }
+    });
+</script>";i:1;N;}i:1;N;}

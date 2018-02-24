@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0051)http://www.kuagoshop.com/admin/website.php?act=list -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>跨购商城 管理中心 - 第三方登录插件 </title>
+<meta name="robots" content="noindex, nofollow">
+
+<link href="./hezuo_denglu_files/general.css" rel="stylesheet" type="text/css">
+<link href="./hezuo_denglu_files/main.css" rel="stylesheet" type="text/css">
+<link href="./hezuo_denglu_files/chosen.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./hezuo_denglu_files/jquery-1.6.2.min.js"></script><script type="text/javascript" src="./hezuo_denglu_files/chosen.jquery.min.js"></script><script type="text/javascript" src="./hezuo_denglu_files/jquery.json.js"></script><script type="text/javascript" src="./hezuo_denglu_files/transport.js"></script><script type="text/javascript" src="./hezuo_denglu_files/common.js"></script><script language="JavaScript">
+<!--
+// 这里把JS用到的所有语言都赋值到这里
+var process_request = "正在处理您的请求...";
+var todolist_caption = "记事本";
+var todolist_autosave = "自动保存";
+var todolist_save = "保存";
+var todolist_clear = "清除";
+var todolist_confirm_save = "是否将更改保存到记事本？";
+var todolist_confirm_clear = "是否清空内容？";
+var confrim_uninstall = "您确定批量卸载？";
+//-->
+</script>
+</head>
+<body>
+
+<div id="menu_list" onmouseover="show_popup()" onmouseout="hide_popup()">
+<ul>
+<li><a href="http://www.kuagoshop.com/admin/goods.php?act=add" target="main_frame">添加新商品</a></li>
+<li><a href="http://www.kuagoshop.com/admin/category.php?act=add" target="main_frame">添加商品分类</a></li>
+<li><a href="http://www.kuagoshop.com/admin/order.php?act=add" target="main_frame">添加订单</a></li>
+<li><a href="http://www.kuagoshop.com/admin/article.php?act=add" target="main_frame">添加新文章</a></li>
+<li><a href="http://www.kuagoshop.com/admin/users.php?act=add" target="main_frame">添加会员</a></li>
+</ul>
+</div>
+<script>
+function show_popup(){
+frmBody = parent.document.getElementById('frame-body');
+if (frmBody.cols == "37, 12, *")
+{
+parent.main_frame.document.getElementById('menu_list').style.left = '195px';
+}
+else
+{
+parent.main_frame.document.getElementById('menu_list').style.left = '40px';
+}
+parent.main_frame.document.getElementById('menu_list').style.display = 'block';
+}
+function hide_popup(){
+
+parent.main_frame.document.getElementById('menu_list').style.display = 'none';
+}
+</script>
+<h1>
+<span class="action-span"><a href="http://www.kuagoshop.com/admin/website.php?act=init">初始化插件</a></span>
+<span class="action-span1"><a href="http://www.kuagoshop.com/admin/index.php?act=main">跨购商城 管理中心</a> </span><span id="search_id" class="action-span1"> - 第三方登录插件 </span>
+<div style="clear:both"></div>
+</h1>
+<script type="text/javascript" src="./hezuo_denglu_files/utils.js"></script><script type="text/javascript" src="./hezuo_denglu_files/listtable.js"></script><div class="">
+	   <!-- 检查是否有新的插件 -->
+</div>
+
+<ul id="lilist" style="padding:0; margin: 0; list-style-type:none; color: #CC0000;">
+  <li style="border: 1px solid #CC0000; background: #FFFFCC; padding: 10px; margin-bottom: 5px;">提示:批量生成调用代码并复制到您的模版文件应用处</li>
+</ul>
+
+
+<form action="" method="post" name="listForm" onsubmit="return confirmSubmit(this)">
+<div class="list-div" id="listDiv">
+<table cellpadding="3" cellspacing="1">
+	<tbody><tr>
+    	<th>插件名称 
+        	<input onclick="listTable.selectAll(this, &quot;checkboxes&quot;)" type="checkbox">
+        </th>
+        <th>作者</th>
+        <th>作者QQ</th>
+        <th>邮箱地址</th>
+        <th>版本</th>
+        <th>更新日期</th>
+        <th>操作</th>
+    </tr>
+        <tr align="center">
+    	<td align="left"><input type="checkbox" name="checkboxes[]" value="alipay">
+        	支付宝        </td>
+        <td>`68ecshop'</td>
+        <td>800007396</td>
+        <td>68ecshop@68ecshop.com</td>
+        <td>1.1v</td>
+        <td>2012-2-23</td>
+        <td><a href="http://www.kuagoshop.com/admin/website.php?act=install&amp;type=alipay">安装</a>            
+             <!-- 插件更新 -->
+        </td>
+    </tr>
+        <tr align="center">
+    	<td align="left"><input type="checkbox" name="checkboxes[]" value="qq">
+        	QQ        </td>
+        <td>`68ecshop'</td>
+        <td>800007396</td>
+        <td>68ecshop@68ecshop.com</td>
+        <td>2.0v</td>
+        <td>2012-6-11</td>
+        <td><a href="http://www.kuagoshop.com/admin/website.php?act=install&amp;type=qq">安装</a>            
+             <!-- 插件更新 -->
+        </td>
+    </tr>
+        <tr align="center">
+    	<td align="left"><input type="checkbox" name="checkboxes[]" value="taobao">
+        	淘宝        </td>
+        <td>`68ecshop'</td>
+        <td>800007396</td>
+        <td>68ecshop@68ecshop.com</td>
+        <td>1.1v</td>
+        <td>2012-12-20</td>
+        <td><a href="http://www.kuagoshop.com/admin/website.php?act=install&amp;type=taobao">安装</a>            
+             <!-- 插件更新 -->
+        </td>
+    </tr>
+        <tr align="center">
+    	<td align="left"><input type="checkbox" name="checkboxes[]" value="weibo">
+        	新浪微博        </td>
+        <td>`68ecshop'</td>
+        <td>800007396</td>
+        <td>68ecshop@68ecshop.com</td>
+        <td>1.2v</td>
+        <td>2012-2-25</td>
+        <td><a href="http://www.kuagoshop.com/admin/website.php?act=install&amp;type=weibo">安装</a>            
+             <!-- 插件更新 -->
+        </td>
+    </tr>
+        <tr align="center">
+    	<td align="left"><input type="checkbox" name="checkboxes[]" value="weixin">
+        	微信        </td>
+        <td>68ecshop</td>
+        <td>68ecshop</td>
+        <td>68ecshop@68ecshop.com</td>
+        <td>1.0v</td>
+        <td>2015-5-1</td>
+        <td>        	<a href="http://www.kuagoshop.com/admin/website.php?act=view&amp;type=weixin">查看</a>
+            <a href="http://www.kuagoshop.com/admin/website.php?act=uninstall&amp;type=weixin">卸载</a>            
+             <!-- 插件更新 -->
+        </td>
+    </tr>
+        <tr>
+      <td colspan="7">
+      <input type="hidden" name="act" value="batch">
+      <select name="type" id="type" onchange="changeAction()">
+      		<option value="">请选择...</option>
+      		<option value="create">批量生成</option>
+            <option value="uninstall">卸载</option>
+      </select>
+      <span id="show_check" style="display:none">
+      	<input id="is_show_name" name="is_show_name" value="1" type="checkbox">
+      	<label for="is_show_name">显示登录名</label>
+      	<input type="checkbox" name="is_show_title" value="1" id="is_show_title">
+      	<label for="is_show_title">显示窗口标题</label>
+        <input type="checkbox" name="is_show_help" id="is_show_help" value="1">
+        <label for="is_show_help">显示气泡</label>
+        <input type="checkbox" name="is_open" id="is_open" value="1">
+        <label for="is_is_open">弹出窗</label>
+      </span>
+      <input type="submit" id="btnSubmit" value=" 确定 " disabled="true" class="button"></td>
+  </tr>
+</tbody></table>
+</div>
+</form>
+
+
+<script language="javascript">
+
+/**
+   * @param: bool ext 其他条件：用于转移分类
+   */
+  function confirmSubmit(frm)
+  {
+      if (frm.elements['type'].value == 'uninstall')
+      {
+          return confirm(confrim_uninstall);
+      }
+      else if (frm.elements['type'].value == '')
+      {
+          return false;
+      }
+      else
+      {
+          return true;
+      }
+  }
+  
+  function changeAction()
+  {
+      var frm = document.forms['listForm'];
+      // 切换分类列表的显示
+	  document.getElementById('show_check').style.display = frm.elements['type'].value == 'create' ? '' : 'none';
+	  
+	  if(frm.elements['type'].value == 'create')
+	  {
+		  return;
+	  }
+	  
+      if (!document.getElementById('btnSubmit').disabled &&
+          confirmSubmit(frm, false))
+      {
+          frm.submit();
+      }
+  }
+
+  
+
+</script>
+</body></html>

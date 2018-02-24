@@ -1,0 +1,74 @@
+2017-04-14 21:53:11 [127.0.0.1][156][3c0avjr72t38rg00f6sgih55b7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\views\layouts\AppAsset' not found' in D:\all\source\php\yii\yii2-ecshop\backend\views\layouts\lte_main.php:12
+Stack trace:
+#0 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#2 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#3 D:\all\source\php\yii\yii2-ecshop\backend\controllers\SiteController.php(74): yii\base\Controller->render()
+#4 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\SiteController->actionIndex()
+#5 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\all\source\php\yii\yii2-ecshop\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2017-04-14 22:07:38 [127.0.0.1][156][3c0avjr72t38rg00f6sgih55b7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'AppAsset' not found' in D:\all\source\php\yii\yii2-ecshop\backend\views\layouts\lte_main.php:13
+Stack trace:
+#0 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#2 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#3 D:\all\source\php\yii\yii2-ecshop\backend\controllers\SiteController.php(74): yii\base\Controller->render()
+#4 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\SiteController->actionIndex()
+#5 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\all\source\php\yii\yii2-ecshop\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2017-04-14 22:14:23 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: D:\all\source\php\yii\yii2-ecshop\backend\views\layouts\main.php' in D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\all\\source\\p...', Array, Object(backend\controllers\AdminYoujianQunfaController))
+#1 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<h1>admin-youji...')
+#2 D:\all\source\php\yii\yii2-ecshop\backend\controllers\AdminYoujianQunfaController.php(11): yii\base\Controller->render('index')
+#3 [internal function]: backend\controllers\AdminYoujianQunfaController->actionIndex()
+#4 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#7 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin-youjian-q...', Array)
+#8 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\all\source\php\yii\yii2-ecshop\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2017-04-15 13:09:53 [127.0.0.1][156][cjiaoftdfmi6n89d0d1dfm3k72][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\components\common\YiiPianduanHuancunWidget' not found' in D:\all\source\php\yii\yii2-ecshop\backend\views\layouts\lte_menu.php:38
+Stack trace:
+#0 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 D:\all\source\php\yii\yii2-ecshop\backend\views\layouts\lte_main.php(62): yii\base\View->render()
+#3 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#4 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#5 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#6 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#7 D:\all\source\php\yii\yii2-ecshop\backend\controllers\SiteController.php(74): yii\base\Controller->render()
+#8 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\SiteController->actionIndex()
+#9 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#10 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#11 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#12 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#13 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#14 D:\all\source\php\yii\yii2-ecshop\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2017-04-17 17:05:43 [127.0.0.1][156][3sb8i469obck2veg8i7g76s6g4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class backend\controllers\AdminRuzhuController contains 5 abstract methods and must therefore be declared abstract or implement the remaining methods (backend\controllers\interfaces\t_week\RuzhuInterface::actionPingtaiJiaoyiTongji, backend\controllers\interfaces\t_week\RuzhuInterface::actionDianpujieFenlei, backend\controllers\interfaces\t_week\RuzhuInterface::actionDianpuBiaoqian, ...)' in D:\all\source\php\yii\yii2-ecshop\backend\controllers\AdminRuzhuController.php:52
+Stack trace:
+#0 D:\all\source\php\yii\yii2-ecshop\common\components\rbac\QuLuyouWidget.php(0): yii\BaseYii::autoload()
+#1 D:\all\source\php\yii\yii2-ecshop\common\components\rbac\QuLuyouWidget.php(81): ::spl_autoload_call()
+#2 D:\all\source\php\yii\yii2-ecshop\common\components\rbac\QuLuyouWidget.php(81): ::get_class_methods()
+#3 D:\all\source\php\yii\yii2-ecshop\common\components\rbac\QuLuyouWidget.php(102): common\components\rbac\QuLuyouWidget->getRightActionData()
+#4 D:\all\source\php\yii\yii2-ecshop\backend\controllers\AdminAuthItemChildController.php(73): common\components\rbac\QuLuyouWidget::getAllController()
+#5 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminAuthItemChildController->actionCreate()
+#6 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#7 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#8 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#9 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#10 D:\all\source\php\yii\yii2-ecshop\common\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#11 D:\all\source\php\yii\yii2-ecshop\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}

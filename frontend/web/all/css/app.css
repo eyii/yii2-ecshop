@@ -1,0 +1,56 @@
+
+#main{
+    min-width: 1200px;
+}
+#searchw6{
+    width: 90%;
+}
+#search{
+    width: 1200px;
+}
+#searchForm{
+    margin-right: 90px;
+}
+.block{
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+}
+.AreaL {
+    width: 289px;
+    margin: 0;
+    margin-right: 10px;
+    float: left;
+}
+.AreaR {
+    margin: 0;
+    width: 900px;
+    float: right;
+}
+
+#show_best_area .goodsItem:nth-child(6n+1),#show_hot_area .goodsItem:nth-child(6n+1){
+    clear: both;
+}
+
+#pinpaiw2,#brands{
+    float: left;
+    width: 99.5%;
+}
+.helpTitBg {
+    padding: 0 0 10px 338px;
+}
+
+#mainNav a{
+    line-height:26px;
+    position: relative;
+    width: auto;
+}
+#mainNav {
+    padding: 0 25px;
+    width: 1200px;
+}
+
+#focus {
+    width: 620px;
+    height: 200px;
+}
